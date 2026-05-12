@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+
+    --primaryPurple: #951196;
+    --secondaryPurple: #bc26bd;
+    --lightPurple: #bf60bf;
+
+    --primaryGreen: #59f218;
+    --secondaryGreen: #3cc900;
+
+    --primaryYellow: #edd600;
+
+    --black: #000000;
+    --darkGray: #0d0d0d;
+    --lightBlack: #111111;
+
+    --white: #ffffff;
+
+    --purpleBorder: rgba(149, 17, 150, 0.5);
+    --greenShadow: rgba(89, 242, 24, 0.3);
+
+    --transition: .3s ease;
+
+    --navbarGradient: linear-gradient(
+        90deg,
+        #000000 0%,
+        #120012 40%,
+        #000000 100%
+    );
+
+    --buttonGradient: linear-gradient(
+        135deg,
+        #951196,
+        #59f218
+    );
+
+    --primaryGlow:
+        0 0 10px #951196,
+        0 0 20px rgba(89, 242, 24, 0.3);
+
+    --greenGlow:
+        0 0 10px #59f218,
+        0 0 20px rgba(89, 242, 24, 0.5);
+
+    --cardBackground: rgba(17, 17, 17, 0.85);
+
+    --blurEffect: blur(10px);
+}
+
+body{
+    background-color: var(--darkGray);
+}
+
+header{
+    background-color: var(--black);
+}
+
+.navbarCustom{
+    background: var(--navbarGradient);
+
+    padding: 18px 0;
+
+    border-bottom: 2px solid var(--primaryGreen);
+
+    box-shadow:
+        0 0 10px var(--primaryPurple),
+        0 0 20px var(--greenShadow);
+}
+
+.navbar-brand{
+    margin-left: -60px;
+}
+
+.logoNavbar{
+    width: 220px;
+    transition: var(--transition);
+}
+
+.logoNavbar:hover{
+    transform: scale(1.03);
+}
+
+.navbarLinks{
+    gap: 25px;
+    margin-left: 40px;
+}
+
+.navbarLinks .nav-link{
+    color: var(--white) !important;
+    font-size: 14px;
+    font-weight: 700;
+    position: relative;
+    transition: var(--transition);
+}
+
+.navbarLinks .nav-link:hover,
+.navbarIcons i:hover{
+    color: var(--primaryGreen) !important;
+}
+
+.navbarLinks .nav-link.active::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 100%;
+    height: 2px;
+    background-color: var(--primaryGreen);
+    box-shadow: 0 0 10px var(--primaryGreen);
+}
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+    margin-top: 0;
+}
+
+.dropdownMenuCustom{
+    background-color: var(--lightBlack);
+    border: 1px solid var(--primaryPurple);
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: var(--transition);
+}
+
+.dropdown:hover .dropdownMenuCustom{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdownMenuCustom .dropdown-item{
+    color: var(--white);
+    transition: var(--transition);
+}
+
+.dropdownMenuCustom .dropdown-item:hover{
+    background-color: var(--primaryGreen);
+    color: var(--black);
+}
+
+.navbarRight,
+.searchBox{
+    display: flex;
+    align-items: center;
+}
+
+.navbarIcons{
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    margin-left: 8px;
+}
+
+.navbarIcons i{
+    color: var(--white);
+    font-size: 26px;
+    cursor: pointer;
+    transition: var(--transition);
+    padding: 8px;
+    border-radius: 50%;
+}
+.navbarRight{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-left: 30px;
+}
+
+.searchBox{
+    background-color: var(--darkGray);
+    border: 1px solid var(--purpleBorder);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.searchBox:hover{
+    border-color: var(--primaryGreen);
+    box-shadow: 0 0 10px var(--greenShadow);
+}
+
+.searchBox input{
+    width: 400px;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: var(--white);
+    font-size: 14px;
+}
+
+.searchBox input::placeholder{
+    color: rgba(255,255,255,0.5);
+}
+
+.searchBox button{
+    width: 50px;
+    height: 42px;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--buttonGradient);
+    color: var(--white);
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: var(--transition);
+}
+
+.searchBox button:hover{
+    filter: brightness(1.1);
+}
+
+.navbarIcons{
+    gap: 18px;
+}
+
+.navbarIcons i{
+    color: var(--white);
+    font-size: 20px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.navbarIcons i:hover{
+    transform: scale(1.1);
+}
+
+.navbar-toggler{
+    border: 1px solid var(--primaryGreen);
+}
+
+.navbar-toggler-icon{
+    filter: invert(1);
+}
