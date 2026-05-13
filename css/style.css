@@ -593,7 +593,7 @@ header{
 
   padding: 25px 40px;
 
-  background: transparent; /* sin fondo */
+  background: transparent; 
 
   overflow: hidden;
 }
