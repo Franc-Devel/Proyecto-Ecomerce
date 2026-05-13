@@ -72,12 +72,10 @@ body{
     .brandsDivider{
         padding:20px;
     }
-
     .brandsTrack{
         justify-content:center;
         gap:25px;
     }
-
     .brandsTrack img{
         height:26px;
     }
@@ -85,17 +83,13 @@ body{
 }
 
 @media(max-width:480px){
-
     .brandsDivider{
         padding:15px;
     }
-
     .brandsTrack{
         gap:20px;
     }
-
     .brandsTrack img{
         height:22px;
     }
-
 }
