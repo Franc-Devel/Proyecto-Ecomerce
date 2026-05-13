@@ -305,4 +305,8 @@ header{
         font-size:.75rem;
     }
 
+    .heroButtons{
+        display:none;
+    }
+
 }
