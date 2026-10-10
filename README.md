@@ -1,53 +1,32 @@
-# Titan Hard 🖥️           
-<img src="./assets/img/LogoHome.png" width="200">
+# Titan Hard · Maquetación de tienda de hardware
 
-## Proyecto final de e-commerce enfocado en productos de hardware y tecnología, desarrollado con HTML, CSS, JavaScript y Bootstrap.
-### 🚀 Características
-- Catálogo de productos
-- Sistema de carrito de compras
-- Modal con detalles del carrito
-- Diseño responsive
-- Navbar interactiva
-- Categorías de productos
-- Interfaz inspirada en tiendas gamer/tecnología
-- Banners promocionales y sliders
-- Páginas de login y registro
-- Página personalizada de error 404
-### 🛠️ Tecnologías Utilizadas
-- ![HTML5](https://img.shields.io/badge/HTML5-orange?style=for-the-badge&logo=html5&logoColor=white)
+Proyecto educativo frontend con HTML, CSS y Bootstrap para presentar productos de hardware y tecnología.
 
-- ![CSS3](https://img.shields.io/badge/CSS3-blue?style=for-the-badge&logo=css3&logoColor=white)
+## Alcance disponible
 
-- ![Bootstrap](https://img.shields.io/badge/Bootstrap-purple?style=for-the-badge&logo=bootstrap&logoColor=white)
+Incluye página principal, categorías, fichas de productos, contacto, login, registro, carrito y página de error. La rama principal no incluye archivos JavaScript propios ni una API; estas vistas no se presentan como un sistema de compras o autenticación comercial.
 
-- ![Git](https://img.shields.io/badge/Git-red?style=for-the-badge&logo=git&logoColor=white)
+## Ejecución local
 
-- ![GitHub](https://img.shields.io/badge/GitHub-black?style=for-the-badge&logo=github&logoColor=white)
+```bash
+git clone https://github.com/Franc-Devel/Proyecto-Ecomerce.git
+cd Proyecto-Ecomerce
+python3 -m http.server 8000
+```
 
-### El proyecto está completamente optimizado y adaptado para:
-- Escritorio
-- Tablets
-- Dispositivos móviles
-  
-### 🎯 Objetivo
-#### El objetivo principal de este proyecto es simular una plataforma moderna de e-commerce tecnológico implementando una experiencia interactiva de compra de hardware con diseño responsive de alta fidelidad, maquetación avanzada con Bootstrap y control de versiones en GitHub.
+Abrir `http://localhost:8000/`. El servidor estático sólo entrega archivos: no procesa pagos, cuentas ni mensajes de contacto.
 
-### 👨‍💻 Desarrollador:
-- **Francisco Agustín Delgado** (Lead Developer & Frontend Architect)
+## Organización
 
-### Repositorio
-- https://github.com/Franc-Devel/Proyecto-Ecomerce.git
-  
-### 📂 Estructura del Proyecto
+- `index.html`: página principal.
+- `css/`: estilos generales y de páginas.
+- `pages/`: categorías, productos y formularios.
+- `assets/`: imágenes de la presentación.
 
-- TitanHard/
-- │── assets/
-- │── css/
-- │── pages/
-- │── index.html
-- │── README.md
+## Contexto y siguientes pasos
 
+Repositorio educativo de Francisco Delgado. La implementación de lógica de carrito y formularios queda como trabajo futuro; no se modifica funcionalidad ni arquitectura en esta revisión documental.
 
-  ### Deudas Técnicas
-  - Agregar funcionalidades con JavaScript.
-  - Pulir algunos diseños.
+Antes de una versión comercial, revisar derechos de uso de imágenes, validación de formularios, autorización de servidor, manejo de pedidos y pruebas de accesibilidad.
+
+[Perfil profesional](https://github.com/Franc-Devel) · [LinkedIn](https://www.linkedin.com/in/francisco-delgado-ojeda/)
