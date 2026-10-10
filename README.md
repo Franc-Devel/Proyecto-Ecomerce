@@ -30,15 +30,13 @@
 - Dispositivos móviles
   
 ### 🎯 Objetivo
-#### El objetivo principal de este proyecto es simular una plataforma moderna de e-commerce tecnológico mientras se practican habilidades de desarrollo frontend, diseño responsive y trabajo en equipo utilizando Git y GitHub.
+#### El objetivo principal de este proyecto es simular una plataforma moderna de e-commerce tecnológico implementando una experiencia interactiva de compra de hardware con diseño responsive de alta fidelidad, maquetación avanzada con Bootstrap y control de versiones en GitHub.
 
-### 👨‍💻 Desarrollado por:
-- Benjamin Federico Mendez
-- Jose Alejandro Abella
-- Francisco Agustin Delgado Ojeda
+### 👨‍💻 Desarrollador:
+- **Francisco Agustín Delgado** (Lead Developer & Frontend Architect)
 
-### Deploy
-- https://titan-hard-project.vercel.app/
+### Repositorio
+- https://github.com/Franc-Devel/Proyecto-Ecomerce.git
   
 ### 📂 Estructura del Proyecto
 
